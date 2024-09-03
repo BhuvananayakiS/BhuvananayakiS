@@ -1,0 +1,23 @@
+package taining;
+
+import java.util.Scanner;
+
+public class traningfsj {
+	public static void main(String[] args)
+	{ 
+		System.out.println("Enter the number");
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+		int reversenum=0;
+		while(num!=0)
+		{
+			int digit=num%10;
+		    reversenum=reversenum*10+digit;
+		    num=num/10;
+			
+		}
+		System.out.println("The reversed number"+reversenum);
+ 	}
+	
+
+}

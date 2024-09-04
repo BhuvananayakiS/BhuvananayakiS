@@ -1,0 +1,44 @@
+package taining;
+
+import java.util.Scanner;
+
+public class index {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the size of array");
+		int n=sc.nextInt();
+		
+		
+         int arr[]=new int[n];
+         System.out.println("Enter the elements");
+         for(int i=0;i<n;i++)
+         {
+        	 
+        	 int t=sc.nextInt();
+        	 arr[i]=t;
+        	
+         }
+         System.out.println("Enter the element to check");
+
+         int key=sc.nextInt();
+         for(int i=0;i<n;i++)
+         {
+         if(arr[i]==key)
+         {
+        	 System.out.println("yes");
+        	 return;
+         }
+     
+         }
+         
+        	 System.out.println("No");
+         
+         
+	
+         
+         
+	}
+
+}
